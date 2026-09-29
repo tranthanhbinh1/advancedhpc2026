@@ -13,9 +13,11 @@
 
 I have an AMD GPU and Numba-HIP installed, it's supposed to be compatible with \texttt{numba.cuda} bindings but 
 it is broken as of now, so I can not print out the information about my GPU. It is a Radeon RX6800. \\
-GPU acceleration in Numba works, I have verified it. \\
-Cuda bindings also works with HIP by using \texttt{numba.hip.pose\_as\_cuda()} \\
-Results of using \texttt{numba.cuda.detect()} is as follows: 
+
+\noindent GPU acceleration in Numba works, I have verified it. \\
+Cuda bindings also somewhat working with HIP by using \texttt{numba.hip.pose\_as\_cuda()} \\
+
+\noindent Results of using \texttt{numba.cuda.detect()} is as follows: 
 
 \begin{verbatim}
 uv run lab2/lab2.py           
