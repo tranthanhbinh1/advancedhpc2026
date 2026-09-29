@@ -1,0 +1,10 @@
+[project]
+name = "advancedhpc2026"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "numba-hip>=0.2.1",
+    "numpy>=2.3.5",
+]
