@@ -1,0 +1,27 @@
+\documentclass{article}
+\usepackage{graphicx}
+
+\title{Labwork 3 - GPU Greyscaling}
+\author{Tran Ngoc Thanh Binh}
+\date{Sept 2026}
+
+\begin{document}
+
+\maketitle
+
+\section{Greyscaling with GPU}
+
+I ran the greyscaler once for each block size from 32 to 1024 threads per block, doubling the size each time. The measured time covers the complete script, including startup, image loading, GPU processing, and saving the output image. Figure~\ref{fig:block-size-runtime} shows the results.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=\linewidth]{lab3/block_size_benchmark.png}
+    \caption{Total greyscaler runtime for each GPU block size. Each point is one run.}
+    \label{fig:block-size-runtime}
+\end{figure}
+
+All six runs took about 1.58--1.62 seconds. The shortest time was at 256 threads per block (1.584 seconds), 
+but the difference between the shortest and longest runs was only about 0.034 seconds. 
+There is no clear trend.
+
+\end{document}
